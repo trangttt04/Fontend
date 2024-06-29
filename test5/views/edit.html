@@ -1,0 +1,39 @@
+<div class="container">
+  <h1 class="text-center mt-5 text-primary">Trang sửa nhân viên</h1>
+  <form>
+    <div>
+      <label for="">Tên nhân viên:</label>
+      <input type="text" class="form-control" ng-model="input.ho_ten" name="" id=""  />
+    <p class="text-danger" ng-if="validate.ho_ten">{{validate.ho_ten}}</p>
+    </div>
+    <div>
+      <label for="">Số điện thoại:</label>
+      <input type="text" class="form-control" ng-model="input.sdt" name="" id=""  />
+    <p class="text-danger" ng-if="validate.ho_ten">{{ validate.sdt }}</p>
+
+    </div>
+    <div>
+      <label for="">Email:</label>
+      <input type="email" class="form-control" ng-model="input.email" name="" id=""  />
+    <p class="text-danger" ng-if="validate.ho_ten">{{ validate.email }}</p>
+
+    </div>
+    <div>
+      <label for="">Chức vụ:</label>
+      <!-- <input type="text" class="form-control" ng-value="NhanVien.chuc_vu" > -->
+      <select class="form-control" ng-model="input.chuc_vu" name="" id="" >
+        <option ng-repeat="cv in ChucVu" value="{{cv.ten_chuc_vu}}">{{cv.ten_chuc_vu}}</option>
+      </select>
+      <p class="text-danger" ng-if="validate.ho_ten">{{ validate.chuc_vu }}</p>
+
+    </div>
+    <div>
+      <label for="">Ngày sinh:</label>
+      <input type="date" class="form-control" ng-model="input.ngay_sinh" name="" id=""  />
+    <p class="text-danger" ng-if="validate.ngay_sinh">{{ validate.ngay_sinh }}</p>
+
+    </div>
+
+    <button class="btn btn-primary" ng-click="onEdit()">update</button>
+  </form>
+</div>

@@ -1,0 +1,33 @@
+<div class="container">
+  <h1 class="text-center mt-5 text-primary">Chi tiết nhân viên</h1>
+  <form>
+    <div>
+      <label for="">Tên nhân viên:</label>
+      <input type="text" class="form-control" ng-value="NhanVien.ho_ten" ng-model="input.ho_ten" name="" id="" disabled  />
+    </div>
+    <div>
+      <label for="">Số điện thoại:</label>
+      <input type="text" class="form-control" ng-value="NhanVien.sdt" ng-model="input.sdt" name="" id="" disabled  />
+    </div>
+    <div>
+      <label for="">Email:</label>
+      <input type="text" class="form-control" ng-value="NhanVien.email" ng-model="input.email" name="" id="" disabled  />
+    </div>
+    <div>
+      <label for="">Chức vụ:</label>
+      <input type="text" class="form-control" ng-value="NhanVien.chuc_vu" disabled >
+      <!-- <select class="form-control" ng-value="NhanVien.chuc_vu" ng-model="input.chuc_vu" name="" id="" disabled >
+        <option ng-repeat="cv in ChucVu" value="{{cv.ten_chuc_vu}}">{{cv.ten_chuc_vu}}</option>
+      </select> -->
+    </div>
+    <div>
+      <label for="">Ngày sinh:</label>
+      <input type="" class="form-control" ng-value="NhanVien.ngay_sinh" ng-model="input.ngay_sinh" name="" id="" disabled  />
+    </div>
+
+    <div class="text-center">
+            <a href="#!/"><button class="btn mt-3 btn-primary">Quay lại</button></a>
+
+    </div>
+  </form>
+</div>

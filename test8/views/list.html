@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Danh sach san pham</h1>
+    <table class="table">
+        <a href="#!/add"><button class="btn btn-primary">Them moi</button></a>
+        <tr>
+            <th>id</th>
+            <th>ten</th>
+            <th>gia</th>
+            <th>hang</th>
+            <th>kich thuoc</th>
+            <th>Hanh dong</th>
+        </tr>
+        <tr ng-repeat="pr in product">
+            <td>{{pr.id}}</td>
+            <td>{{pr.ten}}</td>
+            <td>{{pr.gia}}</td>
+            <td>{{pr.hang}}</td>
+            <td>{{pr.kich_thuoc}}</td>
+            <td>
+                <button class="btn btn-primary" ng-click="onDetail(pr.id)">Detail</button>
+                <button class="btn btn-warning" ng-click="onEdit(pr.id)">Edit</button>
+            </td>
+        </tr>
+    </table>
+</div>

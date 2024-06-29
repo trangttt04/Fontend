@@ -1,0 +1,28 @@
+<div class="container">
+    <h1 class="text-center mt-5">Danh sachs sản phẩm</h1>
+    <div class="">
+        <a href="#!/product/add"><button class="btn btn-success" >Thêm sản phẩm</button></a>
+    </div>
+    <table class="table">
+        <tr>
+            <td>STT</td>
+            <td>mã sản phẩm</td>
+            <td>tên sản phẩm</td>
+            <td>loại</td>
+            <td>giá</td>
+            <td>Thao tác</td>
+        </tr>
+        <tr ng-repeat="(index,pro) in products">
+            <td>{{pro.id}}</td>
+            <td>{{pro.ma}}</td>
+            <td>{{pro.ten}}</td>
+            <td>{{pro.loai}}</td>
+            <td>{{pro.gia}}</td>
+            <td>
+                <button class="btn btn-primary" ng-click="onEdit(pro.id)">Update</button>
+                <button class="btn btn-primary" ng-click="onDelete(pro.id)">Delete</button>
+                <button class="btn btn-primary" ng-click="onDetail(pro.id)">Chi tiết</button>
+            </td>
+        </tr>
+    </table>
+</div>

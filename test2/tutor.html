@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <title>AngularJS</title>
+</head>
+<body ng-app="myApp" >
+    <div ng-controller="myCtrl" >
+        <h1>{{message}}</h1>
+    </div>
+    <script>
+        var myApp = angular.module('myApp',[]); // câu lệnh khởi tạo
+
+        // cách 1:
+        // myApp.controller('myCtrl', myFunction);
+        // function myFunction($scope) {
+        //     $scope.message = 'Đây là trương trình đầu tiên'
+        // }
+
+        // cách 2:
+        myApp.controller('myCtrl', function($scope){
+            $scope.message = "cách 2";
+        });
+    </script>
+</body>
+</html>

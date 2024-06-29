@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Trang them moi</h1>
+    <form>
+        <div>
+            <label for="">ten</label>
+            <input type="text" class="form-control" ng-model="input.ten" name="" id="">
+            <p class="text-danger" ng-if="validate.ten">{{validate.ten}}</p>
+        </div>
+        <div>
+            <label for="">gia</label>
+            <input type="text" class="form-control" ng-model="input.gia" name="" id="">
+            <p class="text-danger" ng-if="validate.gia">{{validate.gia}}</p>
+        </div>
+        <div>
+            <label for="">hang</label>
+            <select name="" id="" class="form-control" ng-model="input.hang">
+                <option ng-repeat="ct in category" value="{{ct.ten_hang}}">{{ct.ten_hang}}</option>
+            </select>
+            <p class="text-danger" ng-if="validate.hang">{{validate.hang}}</p>
+            <!-- <input type="text" class="form-control" ng-model="input.ten" name="" id=""> -->
+        </div>
+        <div>
+            <label for="">kich thuoc</label>
+            <input type="text" class="form-control" ng-model="input.kich_thuoc" name="" id="">
+            <p class="text-danger" ng-if="validate.kich_thuoc">{{validate.kich_thuoc}}</p>
+        </div>
+        <button class="btn btn-primary" ng-click="onEdit()">Sua</button>
+    </form>
+</div>

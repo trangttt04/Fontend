@@ -1,0 +1,53 @@
+{
+  "Tivi": [
+    {
+      "id": "1",
+      "ten": "sam sung",
+      "gia": 12000,
+      "hang": "Sony",
+      "kich_thuoc": "12m"
+    },
+    {
+      "id": "2",
+      "ten": "sam sung",
+      "gia": 12000,
+      "hang": "Sony",
+      "kich_thuoc": "12m"
+    },
+    {
+      "id": "3",
+      "ten": "sam sung",
+      "gia": 12000,
+      "hang": "Sony",
+      "kich_thuoc": "12m"
+    },
+    {
+      "ten": "ahihi",
+      "gia": "120",
+      "hang": "Panasonic",
+      "kich_thuoc": "abc",
+      "id": "e30f"
+    },
+    {
+      "ten": "trnag nè",
+      "gia": "122",
+      "hang": "Sam sung",
+      "kich_thuoc": "12",
+      "id": "bbf8"
+    }
+  ],
+  "Hang": [
+    {
+      "id": "1",
+      "ten_hang": "Sam sung"
+    },
+    {
+      "id": "2",
+      "ten_hang": "Sony"
+    },
+    {
+      "id": "3",
+      "ten_hang": "Panasonic"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "name": "abc",
+      "price": "12",
+      "category": "máy tính",
+      "email": "trangttt@gmail.com",
+      "date": "10/10/2023"
+    },
+    {
+      "name": "a",
+      "price": "13",
+      "category": " Điện thoại",
+      "email": "tathuytrang229@gmail.com1",
+      "date": "2024-02-27",
+      "id": "a46d"
+    }
+  ],
+  "Category": [
+    {
+      "id": "1",
+      "category_name": " Máy tính"
+    },
+    {
+      "id": "2",
+      "category_name": " Điện thoại"
+    },
+    {
+      "id": "3",
+      "category_name": " Laptop"
+    }
+  ]
+}

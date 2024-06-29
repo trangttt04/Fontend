@@ -1,0 +1,66 @@
+<div class="container">
+  <h1 class="text-center mt-5 text-primary">Trang sửa sản phẩm</h1>
+  <form>
+    <div>
+      <label for="">Tiêu đề</label>
+      <input
+        type="text"
+        class="form-control"
+        ng-model="input.tieu_de"
+        name=""
+        id=""
+      />
+      <p class="text-danger" ng-if="validate.tieu_de">{{ validate.tieu_de }}</p>
+    </div>
+    <div>
+      <label for="">Nội dung</label>
+      <input
+        type="text"
+        class="form-control"
+        ng-model="input.noi_dung"
+        name=""
+        id=""
+      />
+      <p class="text-danger" ng-if="validate.noi_dung">
+        {{ validate.noi_dung }}
+      </p>
+    </div>
+    <div>
+      <label for="">Tác giả</label>
+      <input
+        type="text"
+        class="form-control"
+        ng-model="input.tac_gia"
+        name=""
+        id=""
+      />
+      <p class="text-danger" ng-if="validate.tac_gia">{{ validate.tac_gia }}</p>
+    </div>
+    <div>
+      <label for="">Thể loại</label>
+      <!-- <input type="text" ng-value="BaiViet.the_loai" class="form-control" ng-model="input.the_loai" name="" id=""/> -->
+      <select class="form-control" ng-model="input.the_loai">
+        <option ng-repeat="tl in theLoai" value="{{ tl.ten_the_loai }}">
+          {{ tl.ten_the_loai }}
+        </option>
+      </select>
+      <p class="text-danger" ng-if="validate.the_loai">
+        {{ validate.the_loai }}
+      </p>
+    </div>
+    <div>
+      <label for="">Ngày đăng</label>
+      <input
+        type="date"
+        class="form-control"
+        ng-model="input.ngay_dang"
+        name=""
+        id=""
+      />
+      <p class="text-danger" ng-if="validate.ngay_dang">
+        {{ validate.ngay_dang }}
+      </p>
+    </div>
+    <button ng-click="onEdit()" class="btn btn-primary mt-3">Thêm</button>
+  </form>
+</div>

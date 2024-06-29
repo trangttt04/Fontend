@@ -1,0 +1,29 @@
+<div class="container">
+    <h1 class="text-center">Trang sửa sản phẩm</h1>
+    <form>
+        <div>
+            <label for="">Tên</label>
+            <input type="text" class="form-control" ng-model="input.ten" name="" id="">
+            <p class="text-danger" ng-if="validate.ten">{{validate.ten}}</p>
+        </div>
+        <div>
+            <label for="">hãng</label>
+            <select name="" class="form-control" ng-model="input.hang" id="">
+                <option ng-repeat="h in Hang" value="{{h.ten_hang}}">{{h.ten_hang}}</option>
+            </select>
+        <p class="text-danger" ng-if="validate.hang">{{validate.hang}}</p>
+        </div>
+        <div>
+            <label for="">Kích thước</label>
+            <input type="text" class="form-control" ng-model="input.kich_thuoc" name="" id="">
+        <p class="text-danger" ng-if="validate.kich_thuoc">{{validate.kich_thuoc}}</p>
+        </div>
+        <div>
+            <label for="">Giá</label>
+            <input type="text" class="form-control" ng-model="input.gia" name="" id="">
+        <p class="text-danger" ng-if="validate.gia">{{validate.gia}}</p>
+        </div>
+
+        <button class="btn btn-primary mt-4" ng-click="onEdit()">update</button>
+    </form>
+</div>

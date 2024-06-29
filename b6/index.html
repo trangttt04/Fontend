@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="nhap">
+      Họ và tên :
+      <input type="text" ng-model="user.hoten" /> <br />
+      Địa chỉ :
+      <input type="text" name="" id="" ng-model="user.diachi" /> <br />
+      Ngành :
+      <input type="text" ng-model="user.nganh" /> <br />
+      <button ng-click="them()">Thêm</button>
+    </div>
+    <!-- <hr /> -->
+    <!-- <div ng-controller="in">
+      <h1>Thông tin sinh viên</h1>
+      Họ và tên : <span>{{$root.user.hoten}}</span> <br />
+      Địa chỉ : <span>{{$root.user.diachi}}</span> <br />
+      Ngành : <span>{{$root.user.nganh}}</span> <br />
+    </div> -->
+
+    <hr>
+    <div ng-controller="in" >
+        <table>
+            <thead>
+                <th>STT</th>
+                <th>họ và tên</th>
+                <th>địa chỉ</th>
+                <th>ngành</th>
+                <th>
+                    
+                </th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="(index, value) in listUser" >
+                    <td>{{index + 1}}</td>
+                    <td>{{value.hoten}}</td>
+                    <td>{{value.diachi}}</td>
+                    <td>{{value.nganh}}</td>
+                    <td><button>Sửa</button>
+                        <button ng-click="xoa()" >Xóa</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+
+    <script src="./libs/angular.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

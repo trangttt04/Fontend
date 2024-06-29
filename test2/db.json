@@ -1,0 +1,32 @@
+{
+  "Tivi": [
+    {
+      "ten": "sam sung 50 11",
+      "hang": "panasonic",
+      "kich_thuoc": "50  abc",
+      "gia": "20000",
+      "id": "1"
+    },
+    {
+      "id": "c58c",
+      "ten": "avc",
+      "hang": "sam sung",
+      "kich_thuoc": "abc3211",
+      "gia": "231"
+    }
+  ],
+  "Hang": [
+    {
+      "id": "1",
+      "ten_hang": "sam sung"
+    },
+    {
+      "id": "2",
+      "ten_hang": "sony"
+    },
+    {
+      "id": "3",
+      "ten_hang": "panasonic"
+    }
+  ]
+}

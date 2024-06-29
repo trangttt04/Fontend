@@ -1,0 +1,34 @@
+{
+  "NhanVien": [
+    {
+      "ho_ten": "Trang cute",
+      "sdt": "0333607002",
+      "email": "trang113@gmail.com",
+      "chuc_vu": "Nhân viên",
+      "ngay_sinh": "2004-12-20",
+      "id": "1"
+    },
+    {
+      "ho_ten": "Trang nè",
+      "sdt": "0123456789",
+      "email": "trang@gmail.com",
+      "chuc_vu": "Giám đốc",
+      "ngay_sinh": "2004-12-20",
+      "id": "bf0b"
+    }
+  ],
+  "ChucVu": [
+    {
+      "id": "1",
+      "ten_chuc_vu": "Trưởng phòng"
+    },
+    {
+      "id": "2",
+      "ten_chuc_vu": "Nhân viên"
+    },
+    {
+      "id": "3",
+      "ten_chuc_vu": "Giám đốc"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<div class="container">
+    <h1 class="text-center">Thêm mới sản phẩm</h1>
+    <form>
+        <div>
+            <label>Tên</label>
+            <input type="text" class="form-control" ng-model="input.ten" name="" id="" disabled >
+            <p class="text-danger" ng-if="validate.ten">{{validate.ten}}</p>
+        </div>
+        <div>
+            <label>giá</label>
+            <input type="text" class="form-control" ng-model="input.gia" name="" id="" disabled >
+            <p class="text-danger" ng-if="validate.gia">{{validate.gia}}</p>
+        </div>
+        <div>
+            <label>Hãng</label>
+            <select class="form-control" ng-model="input.hang" disabled  >
+                <option ng-repeat="h in Hang" value="{{h.ten_hang}}">{{h.ten_hang}}</option>
+            </select>
+            <!-- <input type="text" class="form-control" ng-model="input.hang" name="" id="" disabled > -->
+            <p class="text-danger" ng-if="validate.hang">{{validate.hang}}</p>
+        </div>
+        <div>
+            <label>Kích thước</label>
+            <input type="text" class="form-control" ng-model="input.kich_thuoc" name="" id="" disabled >
+            <p class="text-danger" ng-if="validate.kich_thuoc">{{validate.kich_thuoc}}</p>
+        </div>
+        <a href="#!/"><button class="btn btn-primary mt-4" ng-click="onDetail()">Quay lại</button></a>
+    </form>
+</div>

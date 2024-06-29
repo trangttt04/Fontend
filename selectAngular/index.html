@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>Chọn địa chỉ</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-controller="AddressController">
+
+
+  <select ng-model="selectedProvince" ng-change="onProvinceChange()">
+    <option value="">Chọn tỉnh</option>
+    <option ng-repeat="province in provinces" value="{{province}}">{{province}}</option>
+  </select>
+
+  <select ng-model="selectedDistrict" ng-change="onDistrictChange()">
+    <option value="">Chọn huyện</option>
+    <option ng-repeat="district in districts" value="{{district}}">{{district}}</option>
+  </select>
+
+  <select ng-model="selectedCommune">
+    <option value="">Chọn xã</option>
+    <option ng-repeat="commune in communes" value="{{commune}}">{{commune}}</option>
+  </select>
+
+  <script>
+    var app = angular.module('myApp', []);
+
+    app.controller('AddressController', function($scope) {
+      $scope.provinces = ['Tỉnh A', 'Tỉnh B', 'Tỉnh C']; // Danh sách các tỉnh
+      $scope.districts = []; // Danh sách các huyện
+      $scope.communes = []; // Danh sách các xã
+
+      // Hàm xử lý khi tỉnh được chọn thay đổi
+      $scope.onProvinceChange = function() {
+        // Đặt danh sách huyện là rỗng
+        $scope.districts = [];
+
+        // Đặt danh sách xã là rỗng
+        $scope.communes = [];
+
+        // Thực hiện xử lý tương ứng với tỉnh được chọn
+        // Ví dụ: Lấy danh sách huyện từ API hoặc dữ liệu trong scope
+        if ($scope.selectedProvince === 'Tỉnh A') {
+          $scope.districts = ['Huyện A1', 'Huyện A2', 'Huyện A3'];
+        } else if ($scope.selectedProvince === 'Tỉnh B') {
+          $scope.districts = ['Huyện B1', 'Huyện B2'];
+        } else if ($scope.selectedProvince === 'Tỉnh C') {
+          $scope.districts = ['Huyện C1', 'Huyện C2', 'Huyện C3', 'Huyện C4'];
+        }
+      };
+
+      // Hàm xử lý khi huyện được chọn thay đổi
+      $scope.onDistrictChange = function() {
+        // Đặt danh sách xã là rỗng
+        $scope.communes = [];
+
+        // Thực hiện xử lý tương ứng với huyện được chọn
+        // Ví dụ: Lấy danh sách xã từ API hoặc dữ liệu trong scope
+        if ($scope.selectedDistrict === 'Huyện A1') {
+          $scope.communes = ['Xã A11', 'Xã A12', 'Xã A13'];
+        } else if ($scope.selectedDistrict === 'Huyện A2') {
+          $scope.communes = ['Xã A21', 'Xã A22'];
+        } else if ($scope.selectedDistrict === 'Huyện B1') {
+          $scope.communes = ['Xã B11', 'Xã B12', 'Xã B13', 'Xã B14'];
+        }
+      };
+    });
+  </script>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <title>Document</title>
+</head>
+<body ng-app="myApp" >
+  <div ng-controller="infoController">
+    <div class="col-lg-4 col-md-6">
+      <select name="province" class="form-control mt-2" ng-model="province" ng-change="onProvinces()">
+          <option value="">Chọn tỉnh/thành phố</option>
+          <option ng-repeat="pro in provinces" value="{{pro}}">{{pro}}</option>
+      </select>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <select class="form-control mt-2" ng-model="district" ng-change="onDistrict()">
+          <option>Quận/huyện</option>
+          <option ng-repeat="dis in districts" value="{{dis}}">{{dis}}</option>
+      </select>
+    </div>
+  <div class="col-lg-3 col-md-6 mt-2">   
+      <input type="text" class="form-control" placeholder="Số nhà, đường, ngõ, xóm">
+  </div>
+  </div>
+  
+
+  <script>
+    var app = angular.module('myApp', []);
+    app.controller('infoController', function($scope) {
+      $scope.provinces = ['Thành Phố Hà Nội', 'Tỉnh Hà Giang'];
+      $scope.districts = ['']; // Renamed from "dis" to "districts"
+      $scope.communes = []; // Renamed from "co" to "communes"
+
+      $scope.onProvinces = function() {
+        $scope.districts = [];
+        $scope.communes = [];
+      };
+    });
+  </script>
+</body>
+</html> -->

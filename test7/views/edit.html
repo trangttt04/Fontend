@@ -1,0 +1,34 @@
+<div class="container">
+    <h1 class="text-center">Trang thêm mới sản phẩm</h1>
+    <form>
+        <div>
+            <label for="">Tên</label>
+            <input type="text" class="form-control" ng-model="input.name" name="" id="">
+            <p class="text-danger" ng-if="validate.name">{{validate.name}}</p>
+        </div>
+        <div>
+            <label for="">giá</label>
+            <input type="text" class="form-control" ng-model="input.price" name="" id="">
+            <p class="text-danger" ng-if="validate.price">{{validate.price}}</p>
+        </div>
+        <div>
+            <label for="">danh mục</label>
+            <select name="" id="" class="form-control" ng-model="input.category">
+                <option ng-repeat="ct in Category" value="{{ct.category_name}}">{{ct.category_name}}</option>
+            </select>
+            <p class="text-danger" ng-if="validate.category">{{validate.category}}</p>
+            <!-- <input type="text" class="form-control" ng-model="input.name" name="" id=""> -->
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="text" class="form-control" ng-model="input.email" name="" id="">
+            <p class="text-danger" ng-if="validate.email">{{validate.email}}</p>
+        </div>
+        <div>
+            <label for="">ngày</label>
+            <input type="date" class="form-control" ng-model="input.date" name="" id="">
+            <p class="text-danger" ng-if="validate.date">{{validate.date}}</p>
+        </div>
+       <button class="btn btn-primary mt-4" ng-click="onEdit()">Add</button>
+    </form>
+</div>

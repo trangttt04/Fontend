@@ -1,0 +1,25 @@
+<div class="container">
+    <h1 class="text-center">Trang danh sách sản phẩm</h1>
+    <table class="table">
+        <a href="#!/add"><button class="btn btn-primary">Theem</button></a>
+        <tr>
+            <th>id</th>
+            <th>tên</th>
+            <th>giá</th>
+            <th>hãng</th>
+            <th>kích thước</th>
+            <th>Thao tác</th>
+        </tr>
+        <tr ng-repeat="(index,tv) in Tivi">
+            <td>{{index + 1}}</td>
+            <td>{{tv.ten}}</td>
+            <td>{{tv.gia}}</td>
+            <td>{{tv.hang}}</td>
+            <td>{{tv.kich_thuoc}}</td>
+            <td>
+                <button class="btn btn-primary" ng-click="onDetail(tv.id)">Detail</button>
+                <button class="btn btn-warning" ng-click="onEdit(tv.id)">Edit</button>
+            </td>
+        </tr>
+    </table>
+</div>

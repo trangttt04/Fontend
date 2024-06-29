@@ -1,0 +1,30 @@
+<div class="container">
+    <h1 class="text-center mt-5 text-primary">Danh sách nhân viên</h1>
+    <table class="table">
+        <div class="">
+            <a href="#!/post/add"><button class="btn btn-success">Thêm mới</button></a>
+        </div>
+        <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Số điện thoại</th>
+            <th>Email</th>
+            <th>Chức vụ</th>
+            <th>Ngày sinh</th>
+            <th>Thao tác</th>
+        </tr>
+        <tr ng-repeat="(index,nv) in NhanVien">
+            <td>{{index + 1}}</td>
+            <td>{{nv.ho_ten}}</td>
+            <td>{{nv.sdt}}</td>
+            <td>{{nv.email}}</td>
+            <td>{{nv.chuc_vu}}</td>
+            <td>{{nv.ngay_sinh}}</td>
+            <th>
+                <button class="btn btn-warning" ng-click="onEdit(nv.id)">Sửa</button>
+                <button class="btn btn-danger" ng-click="onDelete(nv.id)">Xóa</button>
+                <button class="btn btn-success" ng-click="onDetail(nv.id)">Chi Tiết</button>
+            </th>
+        </tr>
+    </table>
+</div>

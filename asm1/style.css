@@ -1,0 +1,16 @@
+
+body{
+    background-image: url(./image/a.jpg);
+}
+.title-section::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #f26522;
+    margin-right: 10px;
+    border-radius: 2px; 
+    
+}
+
+

@@ -1,0 +1,42 @@
+{
+  "BaiViet": [
+    {
+      "tieu_de": "Chủ nghĩa Mac_Lenin1",
+      "noi_dung": "chính trị1",
+      "tac_gia": "Hồ Chí Minh1",
+      "the_loai": "Tiểu thuyết",
+      "ngay_dang": "2024-04-11",
+      "id": "1"
+    },
+    {
+      "id": "1",
+      "tieu_de": "Chủ nghĩa Mac_Lenin",
+      "noi_dung": "chính trị",
+      "tac_gia": "Hồ Chí Minh",
+      "the_loai": "Tin Tức",
+      "ngay_dang": "10/04/2022"
+    },
+    {
+      "tieu_de": "Hồ Chí Minh",
+      "noi_dung": "HCM",
+      "tac_gia": "HCM",
+      "the_loai": "Tin Tức",
+      "ngay_dang": "2024-03-31",
+      "id": "7c51"
+    }
+  ],
+  "theLoai": [
+    {
+      "id": "1",
+      "ten_the_loai": "Tin Tức"
+    },
+    {
+      "id": "2",
+      "ten_the_loai": "Truyện ngắn"
+    },
+    {
+      "id": "3",
+      "ten_the_loai": "Tiểu thuyết"
+    }
+  ]
+}

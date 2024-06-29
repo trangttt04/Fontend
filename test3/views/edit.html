@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Trang thêm sản phẩm</h1>
+    <form>
+        <div>
+            <label for="">Ma</label>
+            <input type="text" class="form-control" ng-model="input.ma" name="" id="">
+            <p class="text-danger" ng-if="validate.ma">{{validate.ma}}</p>
+        </div>
+        <div>
+            <label for="">ten</label>
+            <input type="text" class="form-control" ng-model="input.ten" name="" id="">
+            <p class="text-danger" ng-if="validate.ten">{{validate.ten}}</p>
+        </div>
+        <div>
+            <label for="">loai</label>
+            <select name="" id="" class="form-control" ng-model="input.loai">
+                <option ng-repeat="ca in categories" value="{{ca.category_name}}">{{ca.category_name}}</option>
+            </select>
+            <p class="text-danger" ng-if="validate.loai">{{validate.loai}}</p>
+        </div>
+        <div>
+            <label for="">gia </label>
+            <input type="text" class="form-control" ng-model="input.gia" name="" id="">
+            <p class="text-danger" ng-if="validate.gia">{{validate.gia}}</p>
+        </div>
+        <button class="btn btn-primary" ng-click="onEdit()">update</button>
+    </form>
+</div>

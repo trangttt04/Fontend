@@ -1,0 +1,30 @@
+<div class="container">
+    <h1 class="text-center mt-4 text-primary">Trang danh sách sản phẩm</h1>
+    <table class="table mt-3">
+        <a href="#!/post/add"><button class="btn btn-primary">Thêm</button></a>
+        <tr>
+            <th>STT</th>
+            <th>Tiêu đề</th>
+            <th>Nội dung</th>
+            <th>tác giả</th>
+            <th>Thể loại</th>
+            <th>Ngày đăng</th>
+            <th>Action</th>
+        </tr>
+        <tr ng-repeat="(index,bv) in BaiViet">
+            <td>{{index + 1}}</td>
+            <td>{{bv.tieu_de}}</td>
+            <td>{{bv.noi_dung}}</td>
+            <td>{{bv.tac_gia}}</td>
+            <td>{{bv.the_loai}}</td>
+            <td>{{bv.ngay_dang}}</td>
+            <th>
+                <button class="btn btn-warning" ng-click="onEdit(bv.id)">sửa</button>
+                <button class="btn btn-danger" ng-click="onDelete(bv.id)">Xóa</button>
+                <button class="btn btn-success" ng-click="onDetail(bv.id)">Detail</button>
+
+            </th>
+        </tr>
+
+    </table>
+</div>

@@ -1,0 +1,32 @@
+{
+  "product": [
+    {
+      "id": "d292",
+      "ten": "ada",
+      "gia": "133",
+      "hang": "acer",
+      "kich_thuoc": "123"
+    },
+    {
+      "ten": "bc1",
+      "gia": "2141",
+      "hang": "asus",
+      "kich_thuoc": "1211",
+      "id": "341c"
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "ten_hang": "asus"
+    },
+    {
+      "id": "2",
+      "ten_hang": "acer"
+    },
+    {
+      "id": "3",
+      "ten_hang": "dell"
+    }
+  ]
+}

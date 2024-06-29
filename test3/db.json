@@ -1,0 +1,35 @@
+{
+  "products": [
+    {
+      "ma": "SP011",
+      "ten": "hhi1",
+      "loai": "đồ nữ",
+      "gia": "12",
+      "id": "1"
+    },
+    {
+      "id": "1",
+      "ma": "SP01",
+      "ten": "hhi",
+      "loai": "đồ nam",
+      "gia": "12000"
+    },
+    {
+      "ma": "a201",
+      "ten": "cute1",
+      "loai": "đồ nam",
+      "gia": "2001",
+      "id": "e51c"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "category_name": "đồ nam"
+    },
+    {
+      "id": "2",
+      "category_name": "đồ nữ"
+    }
+  ]
+}

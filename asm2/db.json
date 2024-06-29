@@ -1,0 +1,42 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Mark",
+            "": "CA",
+            "age": "21",
+            "date": "2018/04/21",
+            "salary": "$110.800"
+        },
+        {
+            "id": "2",
+            "name": "Hihi",
+            "office": "AB",
+            "age": "22",
+            "date": "2018/04/21",
+            "salary": "$130.800"
+        },
+        {
+            "id": "3",
+            "name": "Mark",
+            "office": "CA",
+            "age": "21",
+            "date": "2018/04/21",
+            "salary": "$110.800"
+        }
+    ],
+    "category": [
+        {
+            "id": "1",
+            "categoryName": "Sách"
+        },
+        {
+            "id": "2",
+            "categoryName": "Truyện"
+        },
+        {
+            "id": "3",
+            "categoryName": "Tranh"
+        }
+    ]   
+}

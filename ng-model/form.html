@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body ng-app="myApp" >
+    <div ng-controller="infoController" >
+        <form action="">
+            <!-- <h1>test1</h1>
+            <input type="text" ng-model="test" name="" id="">
+            <h2>{{test}}</h2> -->
+
+<!-- radio -->
+            <div>
+                <input type="radio" value="1" ng-model="input" name="" id="">Nam
+                <input type="radio" value="2" ng-model="input" name="" id="">Nữ
+                <button ng-click="submit()" >Submit</button> <br><br><br>
+            </div>
+
+<!-- checkBox -->
+            <div>
+                <h1>Danh sách tạch môn</h1>
+                <br/>
+                <input type="checkbox" ng-model="danhSachAll" name="" id="">All <br>
+               <!-- sử dụng ng-checked để kiêm soát trạng thái của các checkbox khác
+               dựa trên checkbox all -->
+                <input type="checkbox" ng-model="danhSach.A" ng-checked="danhSachAll" name="" id=""> Nguyên Văn A <br>
+                <input type="checkbox" ng-model="danhSach.B" ng-checked="danhSachAll" name="" id=""> Nguyên Văn B <br>
+                <input type="checkbox" ng-model="danhSach.C" ng-checked="danhSachAll" name="" id=""> Nguyên Văn C <br>
+                <input type="checkbox" ng-model="danhSach.D" ng-checked="danhSachAll" name="" id=""> Nguyên Văn D <br>
+                <input type="checkbox" ng-model="danhSach.E" ng-checked="danhSachAll" name="" id=""> Nguyên Văn E <br>
+
+                <input type="submit" value="submit" ng-click="onClick()" name="" id="">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./form.js" ></script>
+</html>
